@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse photos from Bright-World Foundation's beach cleanups, climate workshops, water projects, and renewable energy installations.">
+    <title>Gallery | Bright-World Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 18px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            border: 1px solid var(--glass-border);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            padding: 14px;
+            font-weight: 600;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        Student Name: Abraham Mensah | Index Number: BC/ITS/25/204
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/Bright world.png" alt="Bright-World Foundation Logo">
+                <h1>Bright-World</h1>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="gallery.html" aria-current="page">GALLERY</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a href="donate.html" class="float-donate">Donate Now</a>
+
+    <main>
+        <section class="section-title">
+            <h2>Our Gallery</h2>
+            <p>Capturing moments of change and environmental beauty from our various activities.</p>
+        </section>
+
+        <section>
+            <div class="gallery-grid">
+                 <div class="gallery-item">
+                    <img src="images/costal.jpg" alt="Beach Cleanup">
+                    <div class="gallery-overlay">Community Beach Cleanup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Climate Education Workshop.jpg" alt="Classroom Education">
+                    <div class="gallery-overlay">Climate Education Workshop</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Water and Sanitation.png" alt="Water Sanitation Project">
+                    <div class="gallery-overlay">Clean Water Project</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooftop.jpg" alt="Rooftop Garden">
+                    <div class="gallery-overlay">Urban Rooftop Farming</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Community Development.png" alt="Tree Planting Activity">
+                    <div class="gallery-overlay">Community Development</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Green and Renewable Energy.png" alt="Solar Installation">
+                    <div class="gallery-overlay">Green and Renewable Energy</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Environmental sustanability.png" alt="Environmental Sustainability">
+                    <div class="gallery-overlay">Symbol of Hope</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Climate Change Awareness.png" alt="Climate Change Awareness">
+                    <div class="gallery-overlay">Climate Change Awareness</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+            <p style="margin-top:14px;">&copy; 2026 Bright-World Foundation. Designed by Abraham Mensah (BC/ITS/25/204).</p>
+        </div>
+    </footer>
+</body>
+</html>

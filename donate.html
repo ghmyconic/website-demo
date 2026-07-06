@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support Bright-World Foundation's environmental work. Donate to fund reforestation, solar energy, and clean water programs across Ghana.">
+    <title>Donate | Bright-World Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-top">
+        Student Name: Abraham Mensah | Index Number: BC/ITS/25/204
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/Bright world.png" alt="Bright-World Foundation Logo">
+                <h1>Bright-World</h1>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="donate.html" aria-current="page">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h2>Support Our Cause</h2>
+            <p>Your contributions directly fund our environmental restoration and community programs.</p>
+        </section>
+
+        <section id="why-donate">
+            <div class="flex-container" style="align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3>Why Your Support Matters</h3>
+                    <p>Every donation, no matter the size, helps us take one step closer to a sustainable future. Your funds are used for:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px; list-style: disc;">
+                        <li>Purchasing saplings for reforestation ($10 plants 5 trees)</li>
+                        <li>Maintaining solar equipment in rural schools</li>
+                        <li>Funding research into local climate solutions</li>
+                        <li>Providing tools and safety gear for our volunteers</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <div class="card" style="padding: 30px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                        <h4 style="color: white;">Total Impact to Date</h4>
+                        <p style="font-size: 2.5rem; font-weight: bold; margin: 10px 0;">$2.5M+</p>
+                        <p style="color: rgba(255,255,255,0.9);">Funds raised and invested in environmental projects since 2010.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donation-form">
+            <div class="form-container">
+                <h3 style="margin-bottom: 20px; text-align: center;">Make a Donation</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label>Select Amount (USD)</label>
+                        <div class="flex-container" style="gap: 10px; margin-top: 10px;">
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="10"> $10</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="50"> $50</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="100"> $100</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="other"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-name">Full Name</label>
+                        <input type="text" id="donor-name" name="donor-name" required placeholder="Enter your name" autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-email">Email Address</label>
+                        <input type="email" id="donor-email" name="donor-email" required placeholder="Enter your email" autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select Method</option>
+                            <option value="credit-card">Credit / Debit Card</option>
+                            <option value="momo">Mobile Money</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Leave a message with your donation"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; background-color: var(--secondary-color);">Complete Donation</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section (new) -->
+        <section id="donation-faq">
+            <div class="section-title">
+                <h2>Donation FAQs</h2>
+                <p>Answers to the questions we hear most from our supporters.</p>
+            </div>
+
+            <details class="faq">
+                <summary>Is my donation tax-deductible?</summary>
+                <p>Bright-World Foundation is a registered non-profit in Ghana. Donors requesting a receipt for tax purposes can request one via our Contact page after completing a donation.</p>
+            </details>
+
+            <details class="faq">
+                <summary>Can I set up a recurring monthly donation?</summary>
+                <p>Yes. Choose your preferred amount above and select the "recurring" option with your payment provider, or mention it in the message field and our team will follow up to set it up.</p>
+            </details>
+
+            <details class="faq">
+                <summary>What payment methods do you accept?</summary>
+                <p>We accept credit and debit cards, Mobile Money, and PayPal, so you can give in the way that's most convenient for you.</p>
+            </details>
+
+            <details class="faq">
+                <summary>How is my donation used?</summary>
+                <p>Funds go directly toward reforestation, renewable energy installation, water projects, and volunteer support, as outlined in the "Why Your Support Matters" section above.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+            <p style="margin-top:14px;">&copy; 2026 Bright-World Foundation. Designed by Abraham Mensah (BC/ITS/25/204).</p>
+        </div>
+    </footer>
+</body>
+</html>
